@@ -48,17 +48,6 @@ function removeErrorMessage() {
 }
 
 
-// submitInput.addEventListener("click", function() {
-//   emailField = emailInput.value
-//   textField = textAreaInput.value
-//   nameField = nameInput.value
-//   if ( emailFlied === "" || textField  || nameField === "") {
-//     notSent()
-//   } else {
-//     sent()
-//   }
-// })
-
 nameInput.addEventListener("input", function () {
   content = nameInput.value
   if(content !== "") {
@@ -112,12 +101,14 @@ function removeSent() {
 $(document).ready(function () {
   $('.contact_form').submit(function (event) {
     event.preventDefault();
+    
 
-    var name = $("#name_input").val();
-    var email = $("#email_input").val();
-    var textarea = $("#textarea_input").val();
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let name = $("#name_input").val();
+    let email = $("#email_input").val();
+    let textarea = $("#textarea_input").val();
 
-    if (name === "" || email === "" || textarea === "") {
+    if (name === "" || email === "" || textarea === "" || !emailPattern.test(email)) {
       notSent();
       setTimeout(function() {
         removeNotSent()

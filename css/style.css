@@ -427,4 +427,32 @@ footer {
   }
 
 
+  @media (min-width: 1300px) { 
+    header {
+      width: 70%;
+      margin: auto;
+    }
+
+
+    .first_presentation_container {
+       width: 70%;
+      margin: auto;
+    }
+
+    .technology_container {
+       width: 70%;
+      margin: auto;
+    }
+
+    .projects_container {
+       width: 70%;
+      margin: auto;
+    }
+
+    .contact_form {
+       width: 70%;
+      margin: auto;
+    }
+  }
+
 }
