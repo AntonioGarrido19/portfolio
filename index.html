@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Antonio Garrido Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h3>Antonio Garrido</h3>
+      <div class="social_container">
+        <div class="linkedin_img_container">
+          <img
+            class="linkedin_image"
+            src="asstes/LinkedIn.png"
+            alt="linkedin"
+          />
+          <a
+            href="https://www.linkedin.com/in/antonio-garrido-zorrilla-493697229/"
+          >
+            <img
+              class="linkedin_image_hover"
+              src="asstes/LinkedIn-hover.png"
+              alt="linkedin"
+            />
+          </a>
+        </div>
+
+        <div class="github_img_container">
+          <img
+            class="github_image"
+            src="asstes/akar-icons_github-fill.png"
+            alt="github"
+          />
+          <a href="https://github.com/AntonioGarrido19">
+            <img
+              class="github_image_hover"
+              src="asstes/git-hub-hover.png"
+              alt="github"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="first_presentation_container">
+      <div class="presentation_img">
+        <img src="asstes/me.png" alt="picture_of_me" />
+      </div>
+      <div class="presentation_container">
+        <h1>
+          Nice to meet you! I'm <br />
+          <span>Antonio Garrido</span>
+        </h1>
+        <p>
+          Front-end developer living in Uruguay, passionate about building
+          accesible web apps. <br/> Looking for my first formal job experience and enviroment to add value to the team and grow alongside both personally and professionally.
+        </p>
+        <a href="javascript: scrollContact();" class="contact_me">CONTACT ME</a>
+      </div>
+    </section>
+
+    <section class="technology_container">
+      <div class="technology">
+        <h3>HTML</h3>
+        <p>2 Years Experience</p>
+      </div>
+
+      <div class="technology">
+        <h3>CCS</h3>
+        <p>2 Years Experience</p>
+      </div>
+
+      <div class="technology">
+        <h3>Javascript</h3>
+        <p>1,5 Year Experience</p>
+      </div>
+
+      <div class="technology">
+        <h3>React</h3>
+        <p>1 Year Experience</p>
+      </div>
+
+      <div class="technology">
+        <h3>WordPress</h3>
+        <p>1 Year Experience</p>
+      </div>
+
+      <div class="technology">
+        <h3>NodeJS</h3>
+        <p>1 Year Experience</p>
+      </div>
+    </section>
+
+    <section class="projects_container">
+      <div class="project_header">
+        <h2>Projects</h2>
+        <a href="javascript: scrollContact();" class="contact_me">CONTACT ME</a>
+      </div>
+
+      <div class="project">
+        <div class="project_img_container">
+          <img src="asstes/tmmgpt_project.png" alt="project_img" />
+        </div>
+        <h3>VIRTUAL ASSISTANT</h3>
+        <p>HTML CSS Javascript</p>
+        <div class="project_buttons_container">
+          <a hrefc="" class="project_button">VIEW PROJECT</a>
+          <a hrefc="" class="project_code_button">VIEW CODE</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project_img_container">
+          <img src="asstes/proyecto-amesti-js.png" alt="project_img" />
+        </div>
+        <h3>Amesti E-COMMERCE</h3>
+        <p>HTML CSS Javascript</p>
+        <div class="project_buttons_container">
+          <a hrefc="" class="project_button">VIEW PROJECT</a>
+          <a hrefc="" class="project_code_button">VIEW CODE</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project_img_container">
+          <img src="asstes/vet_projetc_react.png" alt="project_img" />
+        </div>
+        <h3>APPOINTMENTS APP</h3>
+        <p>HTML CSS REACT</p>
+        <div class="project_buttons_container">
+          <a hrefc="" class="project_button">VIEW PROJECT</a>
+          <a hrefc="" class="project_code_button">VIEW CODE</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project_img_container">
+          <img src="asstes/greengard_react_project.png" alt="project_img" />
+        </div>
+        <h3>E-COMMERCE NURSERY</h3>
+        <p>HTML CSS REACT</p>
+        <div class="project_buttons_container">
+          <a hrefc="" class="project_button">VIEW PROJECT</a>
+          <a hrefc="" class="project_code_button">VIEW CODE</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project_img_container">
+          <img src="asstes/tuclinicacapilar_project.png" alt="project_img" />
+        </div>
+        <h3>HAIR BEAUTY AND CARE</h3>
+        <p>WORDPRESS</p>
+        <div class="project_buttons_container">
+          <a hrefc="" class="project_button">VIEW PROJECT</a>
+          <a hrefc="" class="project_code_button">VIEW CODE</a>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="contact_form_container" id="target_contact">
+     
+      <form class="contact_form">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+        <div class="contact_info">
+            <h2>Contact</h2>
+            <p>
+                I would love to hear about your project and how I could help. Please
+                fill in the form, and I'll get back to you as soon as possible.
+            </p>
+        </div>
+    
+        <div class="input_container">
+            <input id="name_input" type="text" placeholder="NAME" name="name" />
+            <input id="email_input" type="text" placeholder="EMAIL" name="email" />
+            <div id="error_message_container"></div>
+            <textarea id="textarea_input" rows="5" cols="25" placeholder="MESSAGE" name="textarea"></textarea>
+            <input class="submit_input" id="submit_button" type="submit" value="SEND MESSAGE" />
+        </div>
+    </form>
+    <div class="form_message">
+     </div>
+
+      <footer>
+        <h3>Antonio Garrido</h3>
+        <div class="social_container">
+          <div class="linkedin_img_container">
+            <img
+              class="linkedin_image"
+              src="asstes/LinkedIn.png"
+              alt="linkedin"
+            />
+            <a
+              href="https://www.linkedin.com/in/antonio-garrido-zorrilla-493697229/"
+            >
+              <img
+                class="linkedin_image_hover"
+                src="asstes/LinkedIn-hover.png"
+                alt="linkedin"
+              />
+            </a>
+          </div>
+
+          <div class="github_img_container">
+            <img
+              class="github_image"
+              src="asstes/akar-icons_github-fill.png"
+              alt="github"
+            />
+            <a href="https://github.com/AntonioGarrido19">
+              <img
+                class="github_image_hover"
+                src="asstes/git-hub-hover.png"
+                alt="github"
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
