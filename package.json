@@ -1,0 +1,9 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "personal portfolio",
+  "main": "app.js",
+  "repository": "https://github.com/AntonioGarrido19/portfolio.git",
+  "author": "AntonioGarrido19 <anto.garrido.98@gmail.com>",
+  "license": "MIT"
+}
