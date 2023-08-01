@@ -123,7 +123,7 @@ header {
   height: 35vh;
   display: flex;
   justify-content: center;
-  margin-bottom: 120px;
+  margin-bottom: 150px;
 }
 
 .presentation_img img {
@@ -175,7 +175,7 @@ a {
 
 .projects_container {
   width: 90%;
-  padding: 10px 0;
+  padding: 20px 0;
   margin: 40px auto;
   display: flex;
   flex-direction: column;
@@ -347,6 +347,7 @@ footer {
     width: 80%;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 auto;
   }
 
   .technology {
@@ -454,7 +455,7 @@ footer {
 
     .technology_container {
        width: 70%;
-      margin: 40px auto;
+       margin-bottom: 40px;
     }
 
     .projects_container {
