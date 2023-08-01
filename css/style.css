@@ -337,6 +337,8 @@ footer {
   .presentation_container {
     align-items: flex-start;
     text-align: left;
+    margin: 0;
+    margin-bottom: auto;
   }
 
   .presentation_img img {
@@ -383,6 +385,11 @@ footer {
 }
 
 @media (min-width: 1000px) {
+
+  .presentation_container {
+    margin: 0;
+    margin-bottom: auto;
+  }
 
   .presentation_img {
     margin-right: 5%;
@@ -446,6 +453,11 @@ footer {
     .first_presentation_container {
        width: 70%;
       margin: auto;
+    }
+
+    .presentation_container {
+      margin: 0;
+      margin-bottom: auto;
     }
 
     .presentation_img img {
