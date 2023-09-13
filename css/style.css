@@ -21,10 +21,19 @@ body {
   font-family: "Roboto", sans-serif;
   font-family: "Space Grotesk", sans-serif;
   background-color: rgb(21, 21, 21);
-  position: relative;
-  background-image: url(/asstes/beehivefullimgEdit2.png);
-  z-index: -100;
 }
+
+.background_image_container {
+  position: relative;
+  background-image: url(/asstes/backgroundimgcanva.png);
+  z-index: -100;  
+}
+
+.background_image_container  {
+
+}
+
+
 
 body h1,
 h2,
