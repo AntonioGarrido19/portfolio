@@ -24,15 +24,10 @@ body {
 }
 
 .background_image_container {
-  position: relative;
+position: absolute;
   background-image: url(/asstes/backgroundimgcanva.png);
   z-index: -100;  
 }
-
-.background_image_container  {
-
-}
-
 
 
 body h1,
