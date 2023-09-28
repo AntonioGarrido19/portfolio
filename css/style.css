@@ -238,9 +238,10 @@ p {
   justify-content: space-between;
 }
 
-.project_code_button {
-  margin-left: 20px;
+.project_button {
+  margin-right: 20px;
 }
+
 
 .degrees_container {
   border: 1.5px var(--darker_grey_letters);
