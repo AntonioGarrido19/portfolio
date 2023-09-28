@@ -238,12 +238,8 @@ p {
   justify-content: space-between;
 }
 
-.project_button {
-  margin-right: 10px;
-}
-
 .project_code_button {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .degrees_container {
