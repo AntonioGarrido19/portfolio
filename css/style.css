@@ -51,6 +51,14 @@ body a {
   padding-bottom: 10px;
 }
 
+.database_code{
+  color: var(--darker_grey_letters);
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1.5px solid var(--green_color);
+  padding-bottom: 10px;
+}
+
 body a:hover {
   color: var(--green_color);
   cursor: pointer;
