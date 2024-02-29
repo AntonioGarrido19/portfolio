@@ -8,6 +8,17 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@300;500&family=Space+Grotesk:wght@500;700&display=swap");
 
+[data-aos] {
+  pointer-events: none;
+}
+.aos-animate {
+  pointer-events: auto;
+}
+.aos-init[data-aos][data-aos].aos-animate {
+  transform: unset;
+}
+
+
 :root {
   --green_color: rgb(78, 225, 160);
 }
@@ -88,9 +99,11 @@ header {
 }
 
 .social_container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: auto;
+  z-index: 99;
 }
 
 .social_container img {

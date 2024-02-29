@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <script defer src="js/app.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <title>Antonio Garrido Portfolio</title>
 </head>
@@ -33,10 +34,10 @@
   </header>
 
   <section class="first_presentation_container"> 
-    <div class="presentation_img">
+    <div class="presentation_img" data-aos="fade-left">
       <img src="asstes/me.png" alt="picture_of_me" />
     </div>
-    <div class="presentation_container">
+    <div class="presentation_container" data-aos="fade-right">
       <h1>
         Nice to meet you! I'm <br />
         <span>Antonio Garrido</span>
@@ -53,7 +54,7 @@
     </div>
   </section>
 
-  <section class="technology_container">
+  <section class="technology_container"  data-aos="zoom-in">
     <div class="technology">
       <h3>HTML</h3>
       <p>2 Years' Experience</p>
@@ -93,11 +94,11 @@
 
   <section class="projects_container">
     <div class="project_header">
-      <h2>Projects</h2>
-      <a href="javascript: scrollContact();" class="contact_me">CONTACT ME</a>
+      <h2 data-aos="fade-right">Projects</h2>
+      <a href="javascript: scrollContact();" class="contact_me" data-aos="fade-left">CONTACT ME</a>
     </div>
 
-    <div class="project">
+    <div class="project"  data-aos="fade-right">
       <div class="project_img_container">
         <img src="asstes/tmmgpt_project.png" alt="project_img" />
       </div>
@@ -110,7 +111,7 @@
       </div>
     </div>
 
-    <div class="project">
+    <div class="project" data-aos="fade-left">
       <div class="project_img_container">
         <img src="asstes/proyecto-amesti-js.png" alt="project_img" />
       </div>
@@ -123,7 +124,7 @@
       </div>
     </div>
 
-    <div class="project">
+    <div class="project" data-aos="fade-right">
       <div class="project_img_container">
         <img src="asstes/vet_projetc_react.png" alt="project_img" />
       </div>
@@ -136,7 +137,7 @@
       </div>
     </div>
 
-    <div class="project">
+    <div class="project" data-aos="fade-left">
       <div class="project_img_container">
         <img src="asstes/greengard_react_project.png" alt="project_img" />
       </div>
@@ -163,11 +164,11 @@
   </section>
 
   <section class="degrees_container">
-    <div class="degrees_header">
+    <div class="degrees_header" data-aos="zoom-in">
       <h3>DEGREES</h3>
     </div>
     
-    <div class="degree">
+    <div class="degree" data-aos="fade-right">
       <div class="degree_img_container">
         <img src="./asstes/WebDevelopment.png" alt="">
       </div>
@@ -175,18 +176,26 @@
     </div>
   
 
-    <div class="degree">
+    <div class="degree" data-aos="fade-left">
       <div class="degree_img_container">
         <img src="./asstes/JavaScript.png" alt="">
       </div>
       <h3>JavaScript</h3>
     </div>
 
-    <div class="degree">
+    <div class="degree" data-aos="fade-right">
       <div class="degree_img_container">
         <img src="./asstes/ReactJs.png" alt="">
       </div>
       <h3>REACT JS</h3>
+    </div>
+
+    
+    <div class="degree" data-aos="fade-left">
+      <div class="degree_img_container">
+        <img src="./asstes/backend.png" alt="">
+      </div>
+      <h3>Backend Development</h3>
     </div>
   </section>
 
@@ -195,15 +204,15 @@
     <form class="contact_form">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
-      <div class="contact_info">
+      <div class="contact_info" data-aos="fade-right">
         <h2>Contact</h2>
-        <p>
+        <!-- <p>
           I would love to hear about your project and how I could help. Please
           fill in the form, and I'll get back to you as soon as possible.
-        </p>
+        </p> -->
       </div>
 
-      <div class="input_container">
+      <div class="input_container" data-aos="fade-left">
         <input id="name_input" type="text" placeholder="NAME" name="name" />
         <input id="email_input" type="text" placeholder="EMAIL" name="email" />
         <div id="error_message_container"></div>
@@ -214,7 +223,7 @@
     <div class="form_message">
     </div>
 
-    <footer>
+    <footer data-aos="zoom-out" data-aos-once="true">
       <h3>Antonio Garrido</h3>
       <div class="social_container">
         <div class="linkedin_img_container">
@@ -234,6 +243,14 @@
     </footer>
   </section>
 </div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500
+        });
+    </script>
+
 </body>
 
 </html>
