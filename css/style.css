@@ -18,7 +18,6 @@
   transform: unset;
 }
 
-
 :root {
   --green_color: rgb(78, 225, 160);
 }
@@ -35,11 +34,10 @@ body {
 }
 
 .background_image_container {
-position: absolute;
+  position: absolute;
   background-image: url(/asstes/backgroundimgcanva.png);
-  z-index: -100;  
+  z-index: -100;
 }
-
 
 body h1,
 h2,
@@ -62,7 +60,7 @@ body a {
   padding-bottom: 10px;
 }
 
-.database_code{
+.database_code {
   color: var(--darker_grey_letters);
   font-size: 16px;
   font-weight: 600;
@@ -116,7 +114,6 @@ header {
   cursor: pointer;
 }
 
-
 .linkedin_image_hover {
   display: none;
   position: absolute;
@@ -159,8 +156,6 @@ header {
   z-index: -1;
 }
 
-
-
 .presentation_container {
   width: 90%;
   margin: auto;
@@ -171,7 +166,6 @@ header {
   text-align: center;
   justify-content: space-between;
 }
-
 
 .presentation_container p {
   max-width: 360px;
@@ -198,7 +192,7 @@ a {
 
 .technology_container {
   width: 90%;
-  margin:auto;
+  margin: auto;
   padding: 40px 0;
   display: flex;
   flex-direction: column;
@@ -216,8 +210,6 @@ a {
   width: 90%;
   padding: 20px 0;
   margin: 40px auto;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
 }
@@ -232,24 +224,40 @@ a {
 .project {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-around;
   margin: 40px auto;
 }
 
-.project_img_container {
-  padding: 30px;
-  background-color: rgb(241, 240, 240);
+.project img {
+  width: 40%;
+  margin-bottom: 4%;
+  /* height: 30vh; */
 }
 
-.project img {
-  width: 100%;
-  height: 30vh;
+.project video,
+.project_info {
+  width: 45%;
+}
+
+.project video {
+  margin-bottom: 4%;
+  /* height: 30vh; */
+}
+
+.project_info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
 .project h3,
 p {
   padding: 10px 0;
+}
+
+#img_title {
+  margin-top: 10%;
 }
 
 .project_buttons_container {
@@ -260,18 +268,17 @@ p {
 }
 
 .project_button {
-  margin-right: 20px;
+  margin: 0 30% 0 30%;
 }
-
 
 .degrees_container {
   border: 1.5px var(--darker_grey_letters);
-    border-style: solid none; 
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 0;
-   margin: auto;
+  border-style: solid none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 0;
+  margin: auto;
 }
 
 .degrees_header {
@@ -284,14 +291,13 @@ p {
 }
 
 .degree h3 {
-  padding: 10px 0;;
+  padding: 10px 0;
 }
 
 .degree_img_container img {
   height: 30vh;
   width: 100%;
 }
-
 
 .contact_form_container {
   background-color: rgb(36, 36, 36);
@@ -361,7 +367,8 @@ textarea {
   margin-bottom: 40px;
 }
 
-#sent, #not_sent {
+#sent,
+#not_sent {
   display: flex;
   justify-content: center;
   width: 80%;
@@ -442,7 +449,7 @@ footer {
   }
 
   .project {
-    width: 40%;
+    width: 100%;
     margin: 40px 0;
   }
 
@@ -470,7 +477,6 @@ footer {
 }
 
 @media (min-width: 1000px) {
-
   .presentation_container {
     margin: 0;
     margin-bottom: auto;
@@ -523,20 +529,19 @@ footer {
     margin: 0;
   }
 
-  #sent, #not_sent {
+  #sent,
+  #not_sent {
     justify-content: flex-end;
   }
 
-
-  @media (min-width: 1300px) { 
+  @media (min-width: 1300px) {
     header {
       width: 70%;
       margin: auto;
     }
 
-
     .first_presentation_container {
-       width: 70%;
+      width: 70%;
       margin: auto;
     }
 
@@ -548,15 +553,14 @@ footer {
     .presentation_img img {
       transform: scale(1.8);
     }
-    
 
     .technology_container {
-       width: 70%;
-       margin-bottom: 40px;
+      width: 70%;
+      margin-bottom: 40px;
     }
 
     .projects_container {
-       width: 70%;
+      width: 70%;
       margin: auto;
     }
 
@@ -565,19 +569,19 @@ footer {
     }
 
     .contact_form {
-       width: 70%;
+      width: 70%;
       margin: auto;
     }
 
     footer {
-       width: 70%;
+      width: 70%;
       margin: auto;
     }
 
-    #sent, #not_sent {
+    #sent,
+    #not_sent {
       width: 70%;
       margin: auto;
     }
   }
-
 }
