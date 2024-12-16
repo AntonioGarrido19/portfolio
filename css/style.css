@@ -447,6 +447,10 @@ footer {
     flex-direction: row;
   }
 
+  .project.p2 {
+    flex-direction: row-reverse;
+  }
+
   .degrees_container {
     width: 80%;
     flex-direction: row;
