@@ -34,6 +34,7 @@ body {
 }
 
 .background_image_container {
+  overflow: hidden;
   position: absolute;
   background-image: url(/asstes/backgroundimgcanva.png);
   z-index: -100;
@@ -145,14 +146,12 @@ header {
 }
 
 .presentation_img {
-  height: 35vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
-  margin-bottom: 150px;
 }
 
 .presentation_img img {
-  transform: scale(2);
   z-index: -1;
 }
 
@@ -226,6 +225,8 @@ a {
   display: flex;
   justify-content: space-around;
   margin: 40px auto;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project img {
@@ -410,19 +411,11 @@ footer {
     flex-direction: row-reverse;
   }
 
-  .presentation_img {
-    margin-right: 8%;
-  }
-
   .presentation_container {
     align-items: flex-start;
     text-align: left;
-    margin: 0;
+    margin-top: 30px;
     margin-bottom: auto;
-  }
-
-  .presentation_img img {
-    transform: scale(1.8);
   }
 
   .technology_container {
@@ -450,7 +443,8 @@ footer {
 
   .project {
     width: 100%;
-    margin: 40px 0;
+    margin: 120px 0;
+    flex-direction: row;
   }
 
   .degrees_container {
@@ -480,14 +474,6 @@ footer {
   .presentation_container {
     margin: 0;
     margin-bottom: auto;
-  }
-
-  .presentation_img {
-    margin-right: 5%;
-  }
-
-  .presentation_img img {
-    transform: scale(1.8);
   }
 
   .technology_container {
@@ -548,10 +534,6 @@ footer {
     .presentation_container {
       margin: 0;
       margin-bottom: auto;
-    }
-
-    .presentation_img img {
-      transform: scale(1.8);
     }
 
     .technology_container {
