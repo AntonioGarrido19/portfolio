@@ -146,7 +146,7 @@ header {
 }
 
 .presentation_img {
-  height: 50vh;
+  height: 50svh;
   display: flex;
   justify-content: center;
 }
@@ -224,25 +224,27 @@ a {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  margin: 40px auto;
+  margin: 140px auto;
+  -webkit-flex-direction: column;
   flex-direction: column;
   align-items: center;
 }
 
 .project img {
-  width: 40%;
+  width: 80%;
   margin-bottom: 4%;
-  /* height: 30vh; */
 }
 
-.project video,
 .project_info {
-  width: 45%;
+  width: 80%;
+}
+
+.project video {
+  width: 80%;
 }
 
 .project video {
   margin-bottom: 4%;
-  /* height: 30vh; */
 }
 
 .project_info {
@@ -269,7 +271,7 @@ p {
 }
 
 .project_button {
-  margin: 0 30% 0 30%;
+  margin: 0 25% 0 25%;
 }
 
 .degrees_container {
@@ -397,7 +399,7 @@ footer {
   border-style: solid none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
   header {
     width: 80%;
     margin: auto;
@@ -445,10 +447,28 @@ footer {
     width: 100%;
     margin: 120px 0;
     flex-direction: row;
+    -webkit-flex-direction: row;
+  }
+
+  .project_info {
+    width: 40%;
+  }
+
+  .project video {
+    width: 40%;
+  }
+
+  .project img {
+    width: 40%;
+  }
+
+  .project_button {
+    margin: 0 30% 0 30%;
   }
 
   .project.p2 {
     flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
   }
 
   .degrees_container {
